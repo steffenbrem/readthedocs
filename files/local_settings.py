@@ -13,7 +13,8 @@ DATABASES = {
     }
 }
 
+USE_SUBDOMAIN = True
 SLUMBER_USERNAME = 'docbuilder'
 SLUMBER_PASSWORD = os.getenv('RTD_SLUMBER_PASSWORD', 'docbuilder')
-PRODUCTION_DOMAIN = os.getenv('RTD_PRODUCTION_DOMAIN', 'localhost:8000')
+PRODUCTION_DOMAIN = 'docs.shopblender.nl'
 SECRET_KEY = 'changemeplease'
